@@ -43,9 +43,10 @@ const main = async () => {
   });
 
   app.get('/qr', function(req, res) {
-
-    res.sendFile(`./bot.qr.png`);
+    const path = `${process.cwd()}`;
+    res.sendFile(path + `/bot.qr.png`);
   });
+
 
   app.get('/get-current-config', function(req, res) {
     let token = req.query.token |""
