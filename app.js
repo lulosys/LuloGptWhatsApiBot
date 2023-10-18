@@ -43,8 +43,8 @@ const main = async () => {
   });
 
   app.get('/qr', function(req, res) {
-    const path = `${process.cwd()}`;
-    res.sendFile(path + `/bot.qr.png`);
+  
+    res.sendFile( `./app/bot.qr.png`);
   });
 
 
