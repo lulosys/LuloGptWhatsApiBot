@@ -46,7 +46,7 @@ const main = async () => {
 
   app.get('/qr', function(req, res) {
   
-    res.sendFile( `./app/bot.qr.png`);
+    res.sendFile( __dirname+`/bot.qr.png`);
   });
 
 
